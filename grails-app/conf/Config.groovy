@@ -98,6 +98,7 @@ grails.plugin.databasemigration.updateOnStart = true
 grails.plugin.databasemigration.updateOnStartFileNames = ['changelog.groovy']
 
 // Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.ui.encodePassword = false // This is because the domain class encrypts the password
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'ly.goal.auth.User'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'ly.goal.auth.UserRole'
 grails.plugins.springsecurity.authority.className = 'ly.goal.auth.Role'
