@@ -107,9 +107,12 @@ grails.plugins.springsecurity.rememberMe.persistentToken.domainClassName = 'ly.g
 grails {
 	mail {
 		host = 'smtp.mailgun.org'
+		username = System.env.GOALLY_MAIL_USERNAME ?: 'changeme'
+		password = System.env.GOALLY_MAIL_PASSWORD ?: 'changeme'
 		port = 587
 		props = ["mail.smtp.starttls.enable": "true", "mail.smtp.port": "587"]
 	}
 }
+grails.mail.default.from = System.env.GOALLY_MAIL_DEFAULT_FROM ?: 'changeme'
 
 grails.plugins.twitterbootstrap.defaultBundle = 'twitter_bootstrap_bundle'

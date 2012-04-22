@@ -39,18 +39,6 @@ class BootStrap {
 			assert Role.count() == 2
 			assert UserRole.count() == 2
 		}
-
-		if (System.env.GOALLY_MAIL_USERNAME) {
-			grailsApplication.config.mail.username = System.env.GOALLY_MAIL_USERNAME
-		}
-
-		if (System.env.GOALLY_MAIL_PASSSWORD) {
-			grailsApplication.config.mail.password = System.env.GOALLY_MAIL_PASSSWORD
-		}
-
-		if (System.env.GOALLY_MAIL_DEFAULT_FROM) {
-			grailsApplication.config.mail.default.from = System.env.GOALLY_MAIL_DEFAULT_FROM
-		}
 	}
 
 	def destroy = {
