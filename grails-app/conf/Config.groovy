@@ -111,3 +111,5 @@ grails {
 		props = ["mail.smtp.starttls.enable": "true", "mail.smtp.port": "587"]
 	}
 }
+
+grails.plugins.twitterbootstrap.defaultBundle = 'twitter_bootstrap_bundle'
