@@ -1,6 +1,6 @@
 # About
 
-[goal.ly](http://goal.ly) A goal tracking website written in Grails.
+[goal.ly](http://goal.ly) is a goal tracking website written in Grails.
 
 This was created as my Computer Science Senior Project.
 
