@@ -20,5 +20,6 @@ class Question {
 
 	static mapping = {
 		responses lazy: true, sort: 'date'
+		time sqlType: 'integer'
 	}
 }

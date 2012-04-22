@@ -108,7 +108,7 @@ databaseChangeLog = {
 				constraints(nullable: "false")
 			}
 
-			column(name: "time", type: "tinyint") {
+			column(name: "time", type: "integer") {
 				constraints(nullable: "false")
 			}
 
