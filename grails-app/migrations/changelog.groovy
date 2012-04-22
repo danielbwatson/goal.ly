@@ -215,4 +215,8 @@ databaseChangeLog = {
 	changeSet(author: "dbwatson (generated)", id: "1335129775578-19") {
 		createSequence(sequenceName: "user_id_sequence")
 	}
+
+	changeSet(author: "dbwatson (generated)", id: "1335129775789-1") {
+		createSequence(sequenceName: "hibernate_sequence")
+	}
 }
