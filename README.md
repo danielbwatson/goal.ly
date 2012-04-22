@@ -1,12 +1,10 @@
-# goal.ly
+# About
 
-## About
-
-A goal tracking website written in Grails.
+[goal.ly](http://goal.ly) A goal tracking website written in Grails.
 
 This was created as my Computer Science Senior Project.
 
-## Copyright and license
+# Copyright and license
 
 Copyright 2012 Daniel Watson.
 
