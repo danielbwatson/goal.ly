@@ -25,12 +25,17 @@ _.extend(Backbone.Validation.callbacks, {
  * The main application
  */
 var App = window.App = {};
+if(document.URL.indexOf('/goal.ly/') > 0) {
+    App.baseUrl = '/goal.ly/'
+} else {
+    App.baseUrl = '/'
+}
 
 /*
  * Models
  */
 App.QuestionModel = Backbone.Model.extend({
-    url:'/goal.ly/question',
+    url:App.baseUrl + 'question',
 
     defaults:{
         id:undefined,
@@ -67,7 +72,7 @@ App.QuestionModel = Backbone.Model.extend({
 
 App.QuestionList = Backbone.Collection.extend({
     model:App.QuestionModel,
-    url:'/goal.ly/question'
+    url:App.baseUrl + 'question'
 });
 
 App.StateModel = Backbone.Model.extend({
