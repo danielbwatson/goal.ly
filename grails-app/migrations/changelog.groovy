@@ -22,7 +22,7 @@ databaseChangeLog = {
 
 	changeSet(author: "dbwatson (generated)", id: "1335108840837-2") {
 		createTable(tableName: "auth_role") {
-			column(autoIncrement: "true", name: "id", type: "bigint") {
+			column(name: "id", type: "bigint") {
 				constraints(nullable: "false", primaryKey: "true", primaryKeyName: "auth_rolePK")
 			}
 
@@ -38,7 +38,7 @@ databaseChangeLog = {
 
 	changeSet(author: "dbwatson (generated)", id: "1335108840837-3") {
 		createTable(tableName: "auth_user") {
-			column(autoIncrement: "true", name: "id", type: "bigint") {
+			column(name: "id", type: "bigint") {
 				constraints(nullable: "false", primaryKey: "true", primaryKeyName: "auth_userPK")
 			}
 
@@ -90,7 +90,7 @@ databaseChangeLog = {
 
 	changeSet(author: "dbwatson (generated)", id: "1335108840837-5") {
 		createTable(tableName: "question") {
-			column(autoIncrement: "true", name: "id", type: "bigint") {
+			column(name: "id", type: "bigint") {
 				constraints(nullable: "false", primaryKey: "true", primaryKeyName: "questionPK")
 			}
 
@@ -140,7 +140,7 @@ databaseChangeLog = {
 
 	changeSet(author: "dbwatson (generated)", id: "1335108840837-7") {
 		createTable(tableName: "response") {
-			column(autoIncrement: "true", name: "id", type: "bigint") {
+			column(name: "id", type: "bigint") {
 				constraints(nullable: "false", primaryKey: "true", primaryKeyName: "responsePK")
 			}
 
@@ -198,5 +198,21 @@ databaseChangeLog = {
 
 	changeSet(author: "dbwatson (generated)", id: "1335108840837-15") {
 		addForeignKeyConstraint(baseColumnNames: "question_id", baseTableName: "response", constraintName: "FKEBB714419A9D49F4", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "question", referencesUniqueColumn: "false")
+	}
+
+	changeSet(author: "dbwatson (generated)", id: "1335129775578-16") {
+		createSequence(sequenceName: "question_id_sequence")
+	}
+
+	changeSet(author: "dbwatson (generated)", id: "1335129775578-17") {
+		createSequence(sequenceName: "response_id_sequence")
+	}
+
+	changeSet(author: "dbwatson (generated)", id: "1335129775578-18") {
+		createSequence(sequenceName: "role_id_sequence")
+	}
+
+	changeSet(author: "dbwatson (generated)", id: "1335129775578-19") {
+		createSequence(sequenceName: "user_id_sequence")
 	}
 }

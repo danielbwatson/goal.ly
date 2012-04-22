@@ -19,6 +19,7 @@ class User {
 	}
 
 	static mapping = {
+		id generator:'sequence', params:[sequence:'user_id_sequence']
 		table 'auth_user'
 		password column: '`password`'
 	}

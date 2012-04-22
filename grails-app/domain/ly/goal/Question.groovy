@@ -19,6 +19,7 @@ class Question {
 	}
 
 	static mapping = {
+		id generator:'sequence', params:[sequence:'question_id_sequence']
 		responses lazy: true, sort: 'date'
 		time sqlType: 'integer'
 	}
