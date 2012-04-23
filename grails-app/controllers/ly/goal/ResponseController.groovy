@@ -11,8 +11,8 @@ class ResponseController {
 		def match = params["body-plain"] =~ idPattern
 		assert match, "Unable to parse response from ${params}"
 
-		def userId = match[0][1]
-		def questionId = match[0][2]
+		def userId = Long.valueOf(match[0][1])
+		def questionId = Long.valueOf(match[0][2])
 
 		def question = Question.findByUserAndId(userId, questionId)
 		assert question, "No matching question found in response to ${params}"
