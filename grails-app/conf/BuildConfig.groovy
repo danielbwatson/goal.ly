@@ -58,6 +58,7 @@ grails.project.dependency.resolution = {
 
 		compile ':quartz:0.4.2'
 		compile ':cdn-resources:0.2.1'
+		compile ':console:1.1'
 
 		test ':spock:0.6'
 

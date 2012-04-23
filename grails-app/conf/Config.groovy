@@ -68,8 +68,10 @@ environments {
     production {
         grails.logging.jul.usebridge = false
         grails.serverURL = "http://www.goal.ly"
+		grails.dbconsole.enabled = true
     }
 }
+grails.dbconsole.urlRoot = '/admin/dbconsole'
 
 // log4j configuration
 log4j = {
@@ -104,6 +106,11 @@ grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'ly.goal.auth.
 grails.plugins.springsecurity.authority.className = 'ly.goal.auth.Role'
 grails.plugins.springsecurity.rememberMe.persistent = true
 grails.plugins.springsecurity.rememberMe.persistentToken.domainClassName = 'ly.goal.auth.PersistentLogin'
+
+grails.plugins.springsecurity.controllerAnnotations.staticRules = [
+	'/admin/**': ['ROLE_ADMIN'],
+	'/console/**': ['ROLE_ADMIN']
+]
 
 grails {
 	mail {
