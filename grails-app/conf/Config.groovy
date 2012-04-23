@@ -69,7 +69,7 @@ environments {
         grails.logging.jul.usebridge = false
         grails.serverURL = "http://www.goal.ly"
 		grails.dbconsole.enabled = true
-		grails.resources.cdn.enabled = true
+//		grails.resources.cdn.enabled = true
     }
 }
 grails.dbconsole.urlRoot = '/admin/dbconsole'
