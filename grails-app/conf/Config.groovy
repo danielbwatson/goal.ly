@@ -69,9 +69,11 @@ environments {
         grails.logging.jul.usebridge = false
         grails.serverURL = "http://www.goal.ly"
 		grails.dbconsole.enabled = true
+		grails.resources.cdn.enabled = true
     }
 }
 grails.dbconsole.urlRoot = '/admin/dbconsole'
+grails.resources.cdn.url = 'd268x0r8izngh.cloudfront.net'
 
 // log4j configuration
 log4j = {
@@ -125,4 +127,3 @@ grails.mail.default.from = System.env.GOALLY_MAIL_DEFAULT_FROM ?: 'changeme'
 
 grails.plugins.twitterbootstrap.defaultBundle = 'twitter_bootstrap_bundle'
 
-grails.resources.cdn.url = 'd268x0r8izngh.cloudfront.net'
