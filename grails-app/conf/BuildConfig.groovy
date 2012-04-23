@@ -57,6 +57,7 @@ grails.project.dependency.resolution = {
 		compile ':spring-security-ui:0.2'
 
 		compile ':quartz:0.4.2'
+		compile ':cdn-resources:0.2.1'
 
 		test ':spock:0.6'
 
