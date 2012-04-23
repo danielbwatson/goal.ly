@@ -14,8 +14,9 @@ class ResponseController {
 		def userId = Long.valueOf(match[0][1])
 		def questionId = Long.valueOf(match[0][2])
 
-		def question = Question.findByUserAndId(userId, questionId)
+		def question = Question.findById(questionId)
 		assert question, "No matching question found in response to ${params}"
+		assert question.userId == userId, "Question ${questionId} does not belong to user ${userId}"
 
 		def response = new Response(date: new Date())
 		switch (question.questionType) {
