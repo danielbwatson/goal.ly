@@ -4,6 +4,11 @@
 
 This was created as my Computer Science Senior Project.
 
+This project allows the user to enter multiple questions.  It then polls
+the user, via email, for the answers to those questions and graphs the
+results over time.  Only questions of type boolean, numeric,
+or that use numeric Likert scale are supported.
+
 # Copyright and license
 
 Copyright 2012 Daniel Watson.
